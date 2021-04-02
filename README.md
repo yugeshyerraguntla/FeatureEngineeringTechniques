@@ -5,16 +5,16 @@ Feature engineering has two goals primarily:
 1. Preparing the proper input dataset, compatible with the machine learning algorithm requirements
 2. Improving the performance of machine learning models
 
-###List of Techniques
-1.Imputation
-2.Handling Outliers
-3.Binning
-4.Log Transform
-5.One-Hot Encoding
-6.Grouping Operations
-7.Feature Split
-8.Scaling
-9.Extracting Date
+___List of Techniques___
+  1. Imputation
+  2. Handling Outliers
+  3. Binning
+  4. Log Transform
+  5. One-Hot Encoding
+  6. Grouping Operations
+  7. Feature Split
+  8. Scaling
+  9. Extracting Date
 
 
 __1.Imputation: Handling Missing Values__
