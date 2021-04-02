@@ -1,0 +1,45 @@
+Types of Categorical Variables:
+-------------------------------------------------------------------
+1. Nominal Categorical Vars: No need to worry about arrangement
+gender:   State:
+Male       AP
+Female     TN
+           Bihar
+           
+           
+2. Ordinal Categorical Variables:
+Need to see about Ranks
+Education:
+BE, BCom, PhD, Masters
+
+Rearrange as per ranks: PhD-1, Masters-2, BE-3, Bcom-4
+---------------------------------------------------------------------
+
+Types of Encoding:
+1. Nominal Encoding: 
+  a. One Hot Encoding
+      - pd.get_dummies()
+      - Dummy Vriable Trap - To aviod, delete one of the column
+      - Not suggested if values are many
+      
+  b. One Hot Encoding with Many Variables
+      - If we have multiples categories, Consider only few - top 10 or top 20
+      
+      
+  c. Mean Encoding
+      - The categories will be replaced with the mean values of their respective output
+  
+2. Ordinal Encoding:
+  a. Label Encoding
+      - Assigning ranks to variables (phd-4, me -3, stat-2, be-1)     
+  
+  b. Target Guided Encoding
+      - Take feature and O/p
+      - Now for one category, ensure to take the average of the o/p (eg: A:0.83, B:0.6, C:0.2, D:0.4)
+      - based of averge values, assign ranks ( eg: A-1, B-2, D-3, C-4)
+      
+      
+      
+More Data available in:
+https://www.youtube.com/watch?v=OTPz5plKb40&list=PLZoTAELRMXVPwYGE2PXD3x0bfKnR0cJjN&index=2
+      
