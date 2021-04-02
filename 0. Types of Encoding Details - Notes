@@ -23,11 +23,16 @@ Types of Encoding:
       - Not suggested if values are many
       
   b. One Hot Encoding with Many Variables
-      - If we have multiples categories, Consider only few - top 10 or top 20 - (Technique Used is Count/Frequency Encoding)
+      - If we have multiples categories, Consider only few - top 10 or top 20
       
       
   c. Mean Encoding
       - The categories will be replaced with the mean values of their respective output
+      
+  d. Count/Frequency Encoding
+      - Takes the count of the variables and instead of the value, it assigns the counts. 
+      - First find counts of the variables, then use MAP function to map the count to the actual variable. - eg: in File 4b
+      - Disadvantage is that if there are variables with same counts, the functionality of that variable is replaced.
   
 2. Ordinal Encoding:
   a. Label Encoding
