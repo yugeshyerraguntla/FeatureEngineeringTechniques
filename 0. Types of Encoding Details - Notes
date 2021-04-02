@@ -28,6 +28,7 @@ Types of Encoding:
       
   c. Mean Encoding
       - The categories will be replaced with the mean values of their respective output
+      (See eg:4c. Here we will have to create a dictionary of categorical variable with an assigned rank. Now MAP this idctionary with the original dataframe)
       
   d. Count/Frequency Encoding
       - Takes the count of the variables and instead of the value, it assigns the counts. 
