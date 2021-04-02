@@ -1,0 +1,19 @@
+What are different types of missing data? and How to handle them? - Eg in 2 and 3
+
+1. Missing completely at Random - MCAR:
+    There’s no relationship between whether a data point is missing and any values in the data set, missing or observed.
+    
+2. Missing at Random - MAR:
+    Missing at Random means  the propensity for a data point to be missing is not related to the missing data, but it is related to some of the observed data.
+    
+3. Missing Not At Random - MNAR:
+    Data are missing not at random when the missing values of a variable are related to the values of that variable itself, even after controlling for other variables.
+    
+    
+HOW TO HANDLE THEM?
+1. Mean/Median/Mode Replacement - Replace with median or mean
+2. Random Sample Imputation - Taking random observations from dataset and use that observation in place of NaN - Use during MCAR (VVIP) Function very good
+3. Capturing NaN values with a new feature  - Create another feature(0/1 as values) that tells importance
+4. End of Distribution Imputation - Take last values in distribution and replave NaN with that. (USE THIS TO REMOVE OUTLIERS)
+5. Arbitrary Imputation -  
+6. Frequent Categories Imputation
