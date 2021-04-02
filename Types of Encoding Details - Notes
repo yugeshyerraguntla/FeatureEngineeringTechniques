@@ -23,7 +23,7 @@ Types of Encoding:
       - Not suggested if values are many
       
   b. One Hot Encoding with Many Variables
-      - If we have multiples categories, Consider only few - top 10 or top 20
+      - If we have multiples categories, Consider only few - top 10 or top 20 - (Technique Used is Count/Frequency Encoding)
       
       
   c. Mean Encoding
