@@ -17,27 +17,27 @@ Feature engineering has two goals primarily:
 9.Extracting Date
 
 
-###1.Imputation: Handling Missing Values
+__1.Imputation: Handling Missing Values__
 Most simple solution to the missing values is to drop the rows or the entire column. There is not an optimum threshold for dropping but you can use 70% as an example value and try to drop the rows and columns which have missing values with higher than this threshold.
 
 threshold = 0.7
-#######Dropping columns with missing value rate higher than threshold
+######Dropping columns with missing value rate higher than threshold
 data = data[data.columns[data.isnull().mean() < threshold]]
 
-#######Dropping rows with missing value rate higher than threshold
+######Dropping rows with missing value rate higher than threshold
 data = data.loc[data.isnull().mean(axis=1) < threshold]
 
-####-Numerical Imputation
+_-Numerical Imputation_
 ######Filling all missing values with 0
 data = data.fillna(0)
 ######Filling missing values with medians of the columns
 data = data.fillna(data.median())
 
-####-Categorical Imputation: Replacing the missing values with the maximum occurred value
-####-Random Sample Imputation: Taking random observation from the dataset and we use this observation to replace the NaN values
+_-Categorical Imputation:_ Replacing the missing values with the maximum occurred value
+_-Random Sample Imputation:_ Taking random observation from the dataset and we use this observation to replace the NaN values
 
 
-###2.Handling Outliers
+__2.Handling Outliers__
   1. Naive Bayes        -  Not Sensitive
   2. SVM                -  Not Sensitive
   3. Linear Reg         -  Sensitive
@@ -65,12 +65,12 @@ data = data[(data['column'] < upper_lim) & (data['column'] > lower_lim)
 
 
 
-###3.Binning
+__3.Binning__
 Creating Bins to data. Can be for both categorical and numerical.
 
 
 
-###4. Log Transform
+__4. Log Transform__
 -helps to handle skewed data and after transformation, the distribution becomes more approximate to normal
 -decreases the effect of the outliers due to the normalization of magnitude differences and the model become more robust
 -must have only positive values, otherwise you receive an error
@@ -80,7 +80,7 @@ data['log+1'] = (data['value']+1).transform(np.log)
 
 
 
-###5. OneHot Encoding - (get_dummies function of Pandas)
+__5. OneHot Encoding - (get_dummies function of Pandas)__
 -This method spreads the values in a column to multiple flag columns and assigns 0 or 1 to them. These binary values express the relationship between grouped and encoded column.
 -changes your categorical data, which is challenging to understand for algorithms, to a numerical format and enables you to group your categorical data without losing any information.
 get_dummies function of Pandas
@@ -89,7 +89,7 @@ data = data.join(encoded_columns).drop('column', axis=1)
 
 
 
-###6. Grouping Operations
+__6. Grouping Operations__
 Categorical Column Grouping
 
 -The first option is to select the label with the highest frequency. In other words, this is the max operation for categorical columns, but ordinary max functions generally do not return this value, you need to use a lambda function for this purpose.
@@ -97,7 +97,7 @@ data.groupby('id').agg(lambda x: x.value_counts().index[0])
 
 -Second option is to make a pivot table. 
 
-###7. Feature Split
+__7. Feature Split__
 data.name
 0  Luther N. Gonzalez
 1    Charles M. Young
@@ -112,7 +112,7 @@ data.name.str.split(" ").map(lambda x: x[-1])
 0    Gonzalez
 1       Young
 
-###8. Scaling
+__8. Scaling__
 In most cases, the numerical features of the dataset do not have a certain range and they differ from each other. In order for a symmetric dataset, scaling is required.
 
 Normalization
@@ -130,7 +130,7 @@ data = pd.DataFrame({'value':[2,45, -23, 85, 28, 2, 35, -12]})
 data['standardized'] = (data['value'] - data['value'].mean()) / data['value'].std()
 
 
-###9. Date Splitting
+__9. Date Splitting__
 #Transform string to date
 data['date'] = pd.to_datetime(data.date, format="%d-%m-%Y")
 
