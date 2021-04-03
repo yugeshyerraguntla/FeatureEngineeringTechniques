@@ -42,3 +42,18 @@ Feature Scaling:
 
 Using Standardization and Normalization 
 Every feature will have Magnitude and Units. Every feature will be different... hence we need to bring them together.
+
+Types Available:
+1. Normalization and Standardization
+2. Scaling to Minima and maxima
+3. Scaling to Median and Quartiles
+4. Robust Scaling
+5. Guassian Transformation -> If the data is right skewed or left skewed, how to make it guassian? (becoz linear and logistic reg are normally distributed)
+    - Logarithamic Transformtion - takes log
+    - Reciprocal Transformation  - takes 1/val
+    - Square Root Transformtion  - takes sqrt
+    - Exponential Transformtion  - df.Age**(1/1.2)
+    - Box Cox Transformation     - 
+
+
+
