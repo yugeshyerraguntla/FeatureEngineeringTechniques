@@ -44,7 +44,7 @@ __2.Handling Outliers__
   4. Logistic Reg       -  Sensitive
   5. DT Reg/Class       -  Not Sensitive
   6. Ensemble(RF,XG,GB) -  Not Sensitive
-  7. KNN                -  Not Sensitive
+  7. KNN                -  Not Sensitive / Sensitive - based on K value. If K is high,model is robust
   8. Kmeans             -  Sensitive
   9. Hierarchial        -  Sensitive
   10. PCA               -  Sensitive
