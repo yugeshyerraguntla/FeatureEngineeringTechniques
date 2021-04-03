@@ -14,7 +14,7 @@ ___List of Techniques___
   6. Grouping Operations
   7. Feature Split
   8. Scaling
-  9. Extracting Date
+  9. Extracting Date - (Example in 4c)
 
 
 __1.Imputation: Handling Missing Values__
