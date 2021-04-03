@@ -25,13 +25,16 @@ NUMERICAL
 CATEGORICAL - More details in Next Notes File
 ------------
 1. Frequent Categorical Imputation
+
 Nominal Encoding:
 2. One Hot Encoding -get_dummies
 3. One Hot Encoding with many vars - consider top 10 or top 20 and then get_dummies in Eg:4a and 4b
-4. Mean Encoding Eg: 5 last
-Ordinal Encoding: Eg in 4c and 5
+4. Mean Encoding - Eg in 5 last
+
+Ordinal Encoding: - Eg in 4c and 5
 5. Label Encoding
-6. Target Guided encoding Eg in 5
+6. Target Guided encoding - Eg in 5
+7. Probability Ratio Encoding - Eg in 6
 
 
 ----------------------------------
