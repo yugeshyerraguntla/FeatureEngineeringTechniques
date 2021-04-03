@@ -44,7 +44,11 @@ Types of Encoding:
       - Take feature and O/p
       - Now for one category, ensure to take the average of the o/p (eg: A:0.83, B:0.6, C:0.2, D:0.4)
       - based of averge values, assign ranks ( eg: A-1, B-2, D-3, C-4)
-      
+   
+   c. Probability Ratio Encoding
+      - Take the feature that we want to compute. Calculate the Unique values and their mean. 
+      - Once we calculate mean of ach, take the other probability i.e; 1-prob
+      - Now prob.ratio = prob/(1-prob) ---- this vlue is the required encoded value
       
       
 More Data available in:
