@@ -64,6 +64,16 @@ lower_lim = data['column'].quantile(.05)
 data = data[(data['column'] < upper_lim) & (data['column'] > lower_lim)
 
 
+1. If data is in Guassian Distribution/Normal Distribution:
+ - Use 3sd  ---> df[x].mean() +- 3*df[x].std[]
+ - Or We can also use Z Score
+
+2. If Data is Skewed? (Left or Right Skewed)?
+ - Calculate IQR ---> df.x.quantile(0.75) - df.x.quantile(0.25)
+ - lower_bridge = df[x].quantile(0.25)-(IQR*1.5)
+ - upper_bridge = df[x].qunatile(0.75)+(IQR*1.5)
+ - For Extreme Boundaries, Multiply by *3.
+
 
 __3.Binning__
 Creating Bins to data. Can be for both categorical and numerical.
