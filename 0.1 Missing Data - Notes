@@ -1,4 +1,4 @@
-What are different types of missing data? and How to handle them? - Eg in 2 and 3
+What are different types of missing data? and How to handle them? 
 
 1. Missing completely at Random - MCAR:
     There’s no relationship between whether a data point is missing and any values in the data set, missing or observed.
@@ -28,13 +28,13 @@ CATEGORICAL - More details in Next Notes File
 
 Nominal Encoding:
 2. One Hot Encoding -get_dummies
-3. One Hot Encoding with many vars - consider top 10 or top 20 and then get_dummies in Eg:4a and 4b
+3. One Hot Encoding with many vars - consider top 10 or top 20 and then get_dummies in Eg:2a
 4. Mean Encoding - Eg in 5 last
 
-Ordinal Encoding: - Eg in 4c and 5
+Ordinal Encoding: - Eg in 2c
 5. Label Encoding
-6. Target Guided encoding - Eg in 5
-7. Probability Ratio Encoding - Eg in 6
+6. Target Guided Encoding 
+7. Probability Ratio Encoding 
 
 
 ----------------------------------
